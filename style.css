@@ -6,7 +6,7 @@ body {
   margin: 0;
   display: grid;
   height: 100vh;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 15% 85%;
   grid-template-rows: 20% 80%;
 }
 
@@ -44,6 +44,7 @@ header .greeting {
   display: flex;
   align-items: center;
   gap: 20px;
+  margin-left: 40px;
 }
 header .greeting img {
   width: 60px;
@@ -58,7 +59,7 @@ header .buttons {
 }
 
 main {
-  background-color: grey;
+  background-color: whitesmoke;
   grid-column: 2/3;
   grid-row: 2/3;
   display: grid;
@@ -74,6 +75,7 @@ main .projects {
 }
 main .projects h2 {
   align-self: center;
+  margin: 0;
   margin-left: 20px;
 }
 main .projects .cards {
@@ -160,6 +162,36 @@ main .trending .users .user .text p {
 aside {
   grid-column: 1/2;
   grid-row: 1/3;
+  background-color: skyblue;
+}
+aside .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+aside .logo img {
+  width: 15%;
+}
+aside .logo h1 {
+  font-size: 40px;
+}
+aside nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(9, 1fr);
+  align-items: center;
+  justify-items: center;
+  row-gap: 20px;
+}
+aside nav .item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 20px;
+}
+aside nav .item p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
