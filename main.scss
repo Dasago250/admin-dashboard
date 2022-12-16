@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');  
 *{
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 body{
   margin: 0;
@@ -9,6 +11,7 @@ body{
   grid-template-rows: 20% 80%;
 }
 header{
+  background-color: #F7FFF7;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   display: grid;
@@ -19,6 +22,9 @@ header{
     justify-content: center;
     align-items: center;
     gap: 5px;
+    i{
+      font-size: 25px;
+    }
     #searchbar{
       border-radius: 15px;
       width: 90%;
@@ -36,6 +42,12 @@ header{
       height: 40px;
       border-radius: 50%;
     }
+    i{
+      font-size: 30px;
+    }
+    p{
+      font-size: 20px;
+    }
   }
   .greeting{
     display: flex;
@@ -47,12 +59,29 @@ header{
       height: 60px;
       border-radius: 50%;
     }
+    .text{
+      p{
+        margin: 0;
+      }
+      .userTag{
+        font-size: 30px;
+      }
+    }
   }
   .buttons{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
+    button{
+      background-color: #343434;
+      border-radius: 20px;
+      font-size: 20px;
+      width: 100px;
+      color: #F7FFF7;
+      border: none;
+      height: 40px;
+    }
   }
 }
 main{
