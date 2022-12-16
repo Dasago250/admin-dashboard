@@ -85,7 +85,7 @@ header{
   }
 }
 main{
-  background-color: whitesmoke;
+  background-color: #343434;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   display: grid;
@@ -100,7 +100,9 @@ main{
     h2{
       align-self: center;
       margin: 0;
-      margin-left: 20px;
+      font-size: 30px;
+      margin-left: 30px;
+      color: #F7FFF7;
     }
     .cards{
       display: grid;
@@ -109,12 +111,25 @@ main{
       justify-items: center;
       align-items: center;
       .card{
-        background-color: white;
+        background-color: #F7FFF7;
         width: 90%;
         height: 90%;
         padding: 10px 30px;
         border-radius: 20px;
-        border-left: solid 15px yellow;
+        border-left: solid 15px #FFE66D;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        align-items: center;
+        h3,p{
+          margin: 0;
+        }
+        .interactions{
+          display: flex;
+          gap: 20px;
+          font-size: 20px;
+          justify-self: end;
+        }
       }
     }
   }
@@ -127,13 +142,14 @@ main{
     h3{
       margin: 0 40px;
       align-self: end;
+      color: #F7FFF7;
     }
     .announce{
-      justify-self: center;
-      background-color: white;
+      background-color: #F7FFF7;
       width: 80%;
       border-radius: 10px;
       padding:0 30px;
+      margin: 0 40px;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(3,1fr);
@@ -156,14 +172,14 @@ main{
     h3{
       margin:0 40px;
       align-self:   end;
+      color: #F7FFF7;
     }
     .users{
-      background-color: white;
-      justify-self: center;
-      background-color: white;
+      background-color: #F7FFF7;
       width: 80%;
       border-radius: 10px;
       padding: 0 30px;
+      margin:0 40px;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(4,1fr);
